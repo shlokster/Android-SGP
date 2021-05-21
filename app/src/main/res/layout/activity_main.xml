@@ -7,10 +7,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="87dp"
-        android:layout_height="20dp"
-        android:text="  Hello World!"
+        android:id="@+id/TextHello"
+        android:layout_width="348dp"
+        android:layout_height="89dp"
+        android:text="Hi, Nice to meet you.                                                                My name is Shlok.                                                                        Please login to explore my world"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -26,38 +27,67 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05"
-        app:srcCompat="@drawable/dp" />
+        app:srcCompat="@drawable/dp"
+        android:contentDescription="@string/todo" />
 
     <LinearLayout
-        android:layout_width="339dp"
-        android:layout_height="91dp"
-        android:orientation="horizontal"
+        android:layout_width="359dp"
+        android:layout_height="269dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831">
 
-        <Button
-            android:id="@+id/button2"
+        <TextView
+            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button"
-            app:backgroundTint="#0040E3" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            android:layout_weight="0.2"
+            android:text="LOGIN"
+            android:textColor="#EF0000"
+            android:textColorLink="#0743DC"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView2"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Email Id" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:rotationX="0" />
+
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
             android:layout_weight="1"
-            android:text="Click the Button" />
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:text="Submit"
+            app:backgroundTint="#0040E3" />
 
     </LinearLayout>
 
